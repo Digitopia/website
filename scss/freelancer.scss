@@ -1,0 +1,51 @@
+// Import variables (overrides Bootstrap defaults)
+@import "base/variables.scss";
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+
+// Import base styles
+@import "base/page.scss";
+
+// Import layout styles
+@import "layout/navbar.scss";
+@import "layout/masthead.scss";
+@import "layout/portfolio.scss";
+@import "layout/footer.scss";
+
+// my styles (@nunoh)
+.bg-secondary {
+    background-color: $secondary !important;
+}
+
+.masthead {
+    min-height: 100% !important;
+    // background-color: $black !important;
+    letter-spacing: 3px;
+}
+
+i {
+    color: $black !important;
+}
+
+.btn-social {
+    &:hover {
+        background-color: darken($primary, 10);
+    }
+}
+
+#equipa {
+    img {
+        width: 128px;
+        filter: grayscale(100%);
+        transition: all 0.2s linear;
+        &:hover {
+            filter: none;
+        }
+    }
+}
+
+.fullpage {
+    height: 100vh;
+    min-height: 350px;
+}
