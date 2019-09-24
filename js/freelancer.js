@@ -146,12 +146,6 @@ new Vue({
                 image: "img/team/augusto.jpg"
             },
             {
-                name: "Tiago Ângelo",
-                position: "Curator",
-                about: "Lorem ipsum dolor sit amet.",
-                image: "img/team/tiago.jpg"
-            },
-            {
                 name: "Nuno Hespanhol",
                 position: "Curator",
                 about: "Lorem ipsum dolor sit amet.",
@@ -168,7 +162,13 @@ new Vue({
                 position: "Curator",
                 about: "Lorem ipsum dolor sit amet.",
                 image: "img/team/brasio.jpg"
-            }
+            },
+            {
+                name: "Ricardo Vieira",
+                position: "Curator",
+                about: "Lorem ipsum dolor sit amet.",
+                image: "img/team/ricardo.jpg"
+            },
         ]
     }
 });
