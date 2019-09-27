@@ -1,84 +1,3 @@
-(function($) {
-    "use strict"; // Start of use strict
-
-    // Smooth scrolling using jQuery easing
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-        if (
-            location.pathname.replace(/^\//, "") ==
-                this.pathname.replace(/^\//, "") &&
-            location.hostname == this.hostname
-        ) {
-            var target = $(this.hash);
-            target = target.length
-                ? target
-                : $("[name=" + this.hash.slice(1) + "]");
-            if (target.length) {
-                $("html, body").animate(
-                    {
-                        scrollTop: target.offset().top - 71
-                    },
-                    1000,
-                    "easeInOutExpo"
-                );
-                return false;
-            }
-        }
-    });
-
-    // Scroll to top button appear
-    $(document).scroll(function() {
-        var scrollDistance = $(this).scrollTop();
-        if (scrollDistance > 100) {
-            $(".scroll-to-top").fadeIn();
-        } else {
-            $(".scroll-to-top").fadeOut();
-        }
-    });
-
-    // Closes responsive menu when a scroll trigger link is clicked
-    $(".js-scroll-trigger").click(function() {
-        $(".navbar-collapse").collapse("hide");
-    });
-
-    // Activate scrollspy to add active class to navbar items on scroll
-    $("body").scrollspy({
-        target: "#mainNav",
-        offset: 80
-    });
-
-    // Collapse Navbar
-    var navbarCollapse = function() {
-        if ($("#mainNav").offset().top > 100) {
-            $("#mainNav").addClass("navbar-shrink");
-        } else {
-            $("#mainNav").removeClass("navbar-shrink");
-        }
-    };
-    // Collapse now if page is not at top
-    navbarCollapse();
-    // Collapse the navbar when page is scrolled
-    $(window).scroll(navbarCollapse);
-
-    // Floating label headings for the contact form
-    $(function() {
-        $("body")
-            .on("input propertychange", ".floating-label-form-group", function(
-                e
-            ) {
-                $(this).toggleClass(
-                    "floating-label-form-group-with-value",
-                    !!$(e.target).val()
-                );
-            })
-            .on("focus", ".floating-label-form-group", function() {
-                $(this).addClass("floating-label-form-group-with-focus");
-            })
-            .on("blur", ".floating-label-form-group", function() {
-                $(this).removeClass("floating-label-form-group-with-focus");
-            });
-    });
-})(jQuery); // End of use strict
-
 new Vue({
     el: "#projects",
     data: {
@@ -87,42 +6,56 @@ new Vue({
                 name: "0 + 1 = SOM",
                 description:
                     "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                image: "https://bulma.io/images/placeholders/1280x960.png",
+                image: "img/software/01som.png",
                 url: "https://01som.casadamusica.com/"
             },
             {
                 name: "Caça Sons",
                 description:
                     "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                image: "https://bulma.io/images/placeholders/1280x960.png",
-                url: "https://cacasons.netlify.com/"
+                image: "img/software/cacasons.png",
+                url: "http://digitopia.casadamusica.com/sons"
+            },
+            {
+                name: "DigiDrone",
+                description:
+                    "Some quick example text to build on the card title and make up the bulk of the card's content.",
+                image: "img/software/digidrone.png",
+                url: "http://digitopia.casadamusica.com/DigiDrone"
+            },
+            {
+                name: "Caixa de Ritmos",
+                description:
+                    "Some quick example text to build on the card title and make up the bulk of the card's content.",
+                image: "img/software/caixaritmos.png",
+                url: "http://digitopia.casadamusica.com/CaixaRitmos"
             },
             {
                 name: "DigiGranular",
                 description:
                     "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                image: "https://bulma.io/images/placeholders/1280x960.png",
-                url: "https://digigranular.netlify.com"
+                image: "img/software/digigranular.png",
+                url: "http://digitopia.casadamusica.com/DigiGranular"
             },
             {
                 name: "DigiSonic",
                 description:
                     "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                image: "https://bulma.io/images/placeholders/1280x960.png",
-                url: "https://digisonic.netlify.com"
+                image: "img/software/digisonic.png",
+                url: "http://digitopia.casadamusica.com/DigiSonic"
             },
             {
                 name: "NepTune",
                 description:
                     "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                image: "https://bulma.io/images/placeholders/1280x960.png",
+                image: "img/software/neptune.png",
                 url: "https://neptune.nunoh.com/"
             },
             {
                 name: "Gamult",
                 description:
                     "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                image: "https://bulma.io/images/placeholders/1280x960.png",
+                image: "img/software/gamult.png",
                 url: "https://digitopia.casadamusica.com/Gamult/"
             }
         ]
@@ -174,7 +107,36 @@ new Vue({
 });
 
 new Vue({
-    el: "#noticias"
+    el: "#noticias",
+    data: {
+        noticias: [
+            {
+                title: "Lançamento na App Store",
+                subtitle: "Light card title",
+                text: "Some quick example text to build on the card title and make up the bulk of the card's content."
+            },
+            {
+                title: "Lançamento na App Store",
+                subtitle: "Light card title",
+                text: "Some quick example text to build on the card title and make up the bulk of the card's content."
+            },
+            {
+                title: "Lançamento na App Store",
+                subtitle: "Light card title",
+                text: "Some quick example text to build on the card title and make up the bulk of the card's content."
+            },
+            {
+                title: "Lançamento na App Store",
+                subtitle: "Light card title",
+                text: "Some quick example text to build on the card title and make up the bulk of the card's content."
+            },
+            {
+                title: "Lançamento na App Store",
+                subtitle: "Light card title",
+                text: "Some quick example text to build on the card title and make up the bulk of the card's content."
+            },
+        ]
+    }
 });
 
 new Vue({

@@ -49,3 +49,17 @@ i {
     height: 100vh;
     min-height: 350px;
 }
+
+.card {
+    // outline: 1px solid rgba(0,0,0,.125);
+    // border: none;
+}
+
+#software {
+    .card {
+        transition: all ease-in 0.1s;
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+}

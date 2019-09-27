@@ -3,7 +3,8 @@
     "name": "digisite",
     "version": "0.0.1",
     "scripts": {
-        "start": "node_modules/.bin/gulp watch"
+        "dev": "node_modules/.bin/gulp watch",
+        "build": "node_modules/.bin/gulp"
     },
     "license": "MIT",
     "author": "Nuno Hespanhol",
