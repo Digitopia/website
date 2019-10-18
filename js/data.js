@@ -31,6 +31,13 @@ new Vue({
                 url: "http://digitopia.casadamusica.com/CaixaRitmos"
             },
             {
+                name: "Nouvelle Cuisine",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
+                image: "img/software/nouvellecuisine.png",
+                url: "http://digitopia.casadamusica.com/nouvellecuisine"
+            },
+            {
                 name: "DigiGranular",
                 description:
                     "Currently under development, DigiGranular is a web-based granular synthesis instrument.",
