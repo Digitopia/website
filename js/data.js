@@ -56,7 +56,14 @@ new Vue({
                 description:
                     "Created as a partnership SPACE, a Erasmus+ project, NepTune is a tool to be used in STEAM education, using the planets from our solar system as musical instruments.",
                 image: "img/software/neptune.png",
-                url: "https://neptune.nunoh.com/"
+                url: "https://steameducation.eu/neptune/"
+            },
+            {
+                name: "SPACE Recipes",
+                description:
+                    "lorem ipsum dolor sit amet",
+                image: "img/software/spacerecipes.png",
+                url: "https://steameducation.eu/recipes/"
             },
             {
                 name: "Gamult",
