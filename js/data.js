@@ -77,7 +77,7 @@ new Vue({
 });
 
 new Vue({
-    el: "#equipa",
+    el: "#team",
     data: {
         team: [
             {
@@ -121,9 +121,9 @@ new Vue({
 });
 
 new Vue({
-    el: "#noticias",
+    el: "#news",
     data: {
-        noticias: [
+        news: [
             {
                 title: "Coming soon",
                 subtitle: "Late October 2019",
@@ -154,7 +154,7 @@ new Vue({
 });
 
 new Vue({
-    el: "#contactos",
+    el: "#contacts",
     data: {
         socials: [
             {

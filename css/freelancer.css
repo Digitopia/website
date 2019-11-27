@@ -10745,7 +10745,7 @@ i {
   background-color: #e6e6e6;
 }
 
-#equipa img {
+#team img {
   width: 128px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -10753,7 +10753,7 @@ i {
   transition: all 0.2s linear;
 }
 
-#equipa img:hover {
+#team img:hover {
   -webkit-filter: none;
   filter: none;
 }

@@ -138,15 +138,15 @@
                             <li class="nav-item mx-0 mx-lg-1">
                                 <a
                                     class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                                    href="#sobre"
-                                    >sobre</a
+                                    href="#about"
+                                    >about</a
                                 >
                             </li>
                             <li class="nav-item mx-0 mx-lg-1">
                                 <a
                                     class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                                    href="#noticias"
-                                    >notícias</a
+                                    href="#news"
+                                    >news</a
                                 >
                             </li>
                             <li class="nav-item mx-0 mx-lg-1">
@@ -159,15 +159,15 @@
                             <li class="nav-item mx-0 mx-lg-1">
                                 <a
                                     class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                                    href="#equipa"
-                                    >equipa</a
+                                    href="#team"
+                                    >team</a
                                 >
                             </li>
                             <li class="nav-item mx-0 mx-lg-1">
                                 <a
                                     class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                                    href="#contactos"
-                                    >contactos</a
+                                    href="#contacts"
+                                    >contacts</a
                                 >
                             </li>
                         </ul>
@@ -191,10 +191,10 @@
                 </div>
             </header>
 
-            <!-- SOBRE -->
-            <section class="page-section bg-secondary" id="sobre">
+            <!-- ABOUT -->
+            <section class="page-section bg-secondary" id="about">
                 <div class="container">
-                    <h2 class="page-section-heading text-center mb-5">sobre</h2>
+                    <h2 class="page-section-heading text-center mb-5">about</h2>
 
                     <div class="row">
                         <div class="col-md-6 col-lg-8">
@@ -239,23 +239,23 @@
                 </div>
             </section>
 
-            <!-- NOTICIAS -->
-            <section class="page-section" id="noticias">
+            <!-- NEWS -->
+            <section class="page-section" id="news">
                 <div class="container">
                     <h2 class="page-section-heading text-center mb-5">
-                        notícias
+                        news
                     </h2>
 
                     <div class="row">
-                        <div class="col-md-6 col-lg-4" v-for="noticia in noticias">
+                        <div class="col-md-6 col-lg-4" v-for="news_item in news">
                             <div class="card mb-3">
                                 <div class="card-header">
-                                    {{ noticia.title }}
+                                    {{ news_item.title }}
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">{{ noticia.subtitle }}</h5>
+                                    <h5 class="card-title">{{ news_item.subtitle }}</h5>
                                     <p class="card-text">
-                                        {{ noticia.text }}
+                                        {{ news_item.text }}
                                     </p>
                                 </div>
                             </div>
@@ -299,11 +299,11 @@
                 </div>
             </section>
 
-            <!-- EQUIPA -->
-            <section class="page-section" id="equipa">
+            <!-- TEAM -->
+            <section class="page-section" id="team">
                 <div class="container">
                     <h2 class="page-section-heading text-center mb-5">
-                        equipa
+                        team
                     </h2>
 
                     <div class="row">
@@ -327,14 +327,14 @@
                 </div>
             </section>
 
-            <!-- CONTACTOS -->
+            <!-- CONTACTS -->
             <section
                 class="page-section bg-secondary text-center"
-                id="contactos"
+                id="contacts"
             >
                 <div class="container">
                     <h2 class="page-section-heading text-center mb-5">
-                        contactos
+                        contacts
                     </h2>
 
                     <div class="text-center">
