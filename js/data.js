@@ -32,8 +32,7 @@ new Vue({
             },
             {
                 name: "Nouvelle Cuisine",
-                description:
-                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
+                description: "",
                 image: "img/software/nouvellecuisine.png",
                 url: "http://digitopia.casadamusica.com/nouvellecuisine"
             },
@@ -60,8 +59,7 @@ new Vue({
             },
             {
                 name: "SPACE Recipes",
-                description:
-                    "lorem ipsum dolor sit amet",
+                description: "",
                 image: "img/software/spacerecipes.png",
                 url: "https://steameducation.eu/recipes/"
             },
@@ -126,27 +124,7 @@ new Vue({
         news: [
             {
                 title: "Coming soon",
-                subtitle: "Late October 2019",
-                text: "This space is dedicated to the communication of Digitópia's activities, and its research."
-            },
-            {
-                title: "Coming soon",
-                subtitle: "Late October 2019",
-                text: "This space is dedicated to the communication of Digitópia's activities, and its research."
-            },
-            {
-                title: "Coming soon",
-                subtitle: "Late October 2019",
-                text: "This space is dedicated to the communication of Digitópia's activities, and its research."
-            },
-            {
-                title: "Coming soon",
-                subtitle: "Late October 2019",
-                text: "This space is dedicated to the communication of Digitópia's activities, and its research."
-            },
-            {
-                title: "Coming soon",
-                subtitle: "Late October 2019",
+                subtitle: "",
                 text: "This space is dedicated to the communication of Digitópia's activities, and its research."
             },
         ]

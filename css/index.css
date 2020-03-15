@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - DigiSite v0.0.1 ()
- * Copyright 2013-2019 Digitópia
+ * Copyright 2013-2020 Digitópia
  * Licensed under MIT (https://github.com/BlackrockDigital/digisite/blob/master/LICENSE)
  */
 
