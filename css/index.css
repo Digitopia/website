@@ -10772,3 +10772,15 @@ i {
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
 }
+
+[v-cloak] {
+  display: none;
+}
+
+.lang {
+  font-size: 0.7rem !important;
+}
+
+.lang:hover {
+  cursor: pointer;
+}

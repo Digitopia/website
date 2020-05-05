@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- <style>
+            [v-cloak] {
+                display: none;
+            }
+        </style> -->
         <meta charset="utf-8" />
         <meta
             name="viewport"
@@ -40,14 +45,15 @@
     </head>
 
     <body id="page-top">
-        <div id="app1">
+        <div id="app" v-cloak>
             <!-- Navigation -->
             <nav
-                class="navbar navbar-expand-lg bg-secondary fixed-top"
+                class="navbar navbar-expand-lg fixed-top bg-secondary"
                 id="mainNav"
             >
                 <div class="container">
                     <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                        <img src="img/logo2020.png" width=140 alt="">
                     </a>
                     <button
                         class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary rounded"
@@ -66,38 +72,50 @@
                                 <a
                                     class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                                     href="#about"
-                                    >about</a
+                                    >{{ $t('sections.about') }}</a
                                 >
                             </li>
                             <li class="nav-item mx-0 mx-lg-1">
                                 <a
                                     class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                                     href="#news"
-                                    >news</a
+                                    >{{ $t('sections.news') }}</a
                                 >
                             </li>
                             <li class="nav-item mx-0 mx-lg-1">
                                 <a
                                     class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                                     href="#software"
-                                    >software</a
+                                    >{{ $t('sections.software') }}</a
                                 >
                             </li>
                             <li class="nav-item mx-0 mx-lg-1">
                                 <a
                                     class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                                     href="#team"
-                                    >team</a
+                                    >{{ $t('sections.team') }}</a
                                 >
                             </li>
                             <li class="nav-item mx-0 mx-lg-1">
                                 <a
                                     class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                                     href="#contacts"
-                                    >contacts</a
+                                    >{{ $t('sections.contacts') }}</a
                                 >
                             </li>
                         </ul>
+                        <div>
+                            <a
+                                class="btn btn-sm btn-secondary lang m-0"
+                                @click="changeLocale('pt')"
+                                v-bind:class="{ active: $i18n.locale == 'pt' }"
+                                >PT</a>
+                            <a
+                                class="btn btn-sm btn-secondary lang m-0"
+                                @click="changeLocale('en')"
+                                v-bind:class="{ active: $i18n.locale == 'en' }"
+                                >EN</a>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -121,12 +139,15 @@
             <!-- ABOUT -->
             <section class="page-section bg-secondary" id="about">
                 <div class="container">
-                    <h2 class="page-section-heading text-center mb-5">about</h2>
+                    <h2 class="page-section-heading text-center mb-5">{{ $t('sections.about') }}</h2>
 
                     <div class="row">
                         <div class="col-md-6 col-lg-8">
                             <p>
-                                Worten Digitópia is a digital music platform based at Casa da Música in Oporto, which encourages the act of listening, performance and musical creation. </p><p>Based on digital tools, although not exclusively, Digitopia emphasizes collaborative musical creation, software design, music education, social inclusion, aiming to emerge multicultural communities of performers, composers, curious and music lovers.
+                                {{ $t("about.0") }}
+                            </p>
+                            <p>
+                                {{ $t("about.1") }}
                             </p>
                         </div>
                         <div class="col-md-4 col-lg-4">
@@ -170,20 +191,18 @@
             <section class="page-section" id="news">
                 <div class="container">
                     <h2 class="page-section-heading text-center mb-5">
-                        news
+                        {{ $t('sections.news') }}
                     </h2>
 
                     <div class="row">
-                        <div class="col-md-6 col-lg-4" v-for="news_item in news">
+                        <div class="col-md-6 col-lg-4" v-for="newsKey in news">
                             <div class="card mb-3">
                                 <div class="card-header">
-                                    {{ news_item.title }}
+                                    {{ $t('news.' + newsKey + '.title') }}
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">{{ news_item.subtitle }}</h5>
-                                    <p class="card-text">
-                                        {{ news_item.text }}
-                                    </p>
+                                    <h5 class="card-title">{{ $t('news.' + newsKey + '.subtitle') }}</h5>
+                                    <p class="card-text" v-html="$t('news.' + newsKey + '.text')"></p>
                                 </div>
                             </div>
                         </div>
@@ -195,13 +214,13 @@
             <section class="page-section bg-secondary" id="software">
                 <div class="container">
                     <h2 class="page-section-heading text-center mb-5">
-                        software
+                        {{ $t('sections.software') }}
                     </h2>
 
                     <div class="row" id="projects">
                         <div
                             class="col-md-6 col-lg-4 mb-4"
-                            v-for="project in projects"
+                            v-for="(project, projectKey) in projects"
                         >
                             <div class="card rounded">
                                 <a :href="project.url" target="_blank">
@@ -216,7 +235,7 @@
                                         {{ project.name }}
                                     </h5>
                                     <p class="card-text">
-                                        {{ project.description }}
+                                        {{ $t('projects.' + projectKey + '.description') }}
                                     </p>
                                     <!-- <a href="#" class="btn btn-secondary">Ver website</a> -->
                                 </div>
@@ -230,13 +249,13 @@
             <section class="page-section" id="team">
                 <div class="container">
                     <h2 class="page-section-heading text-center mb-5">
-                        team
+                        {{ $t('sections.team') }}
                     </h2>
 
                     <div class="row">
                         <div
                             class="col-md-6 col-lg-4 text-center"
-                            v-for="person in team"
+                            v-for="(person, personKey) in team"
                         >
                             <img
                                 class="card-img-top img-fluid rounded-circle"
@@ -245,10 +264,8 @@
                                 alt="Card image cap"
                             />
                             <h3 class="mt-3">{{ person.name }}</h3>
-                            <h6>{{ person.position }}</h6>
-                            <p>
-                                {{ person.about }}
-                            </p>
+                            <h6>{{ $t('team.' + personKey + '.position') }}</h6>
+                            <p>{{ $t('team.' + personKey + '.about') }}</p>
                         </div>
                     </div>
                 </div>
@@ -261,7 +278,7 @@
             >
                 <div class="container">
                     <h2 class="page-section-heading text-center mb-5">
-                        contacts
+                        {{ $t('sections.contacts') }}
                     </h2>
 
                     <div class="text-center">
@@ -305,7 +322,7 @@
             <section class="copyright py-4 text-center">
                 <div class="container">
                     <p>
-                        Mecenas Worten Digitópia <img src="img/worten.svg" width="100" alt="">
+                        {{ $t('mecenas') }} Worten Digitópia <img src="img/worten.svg" width="100" alt="">
                     </p>
                     <p>
                         <small>Copyright &copy; Worten Digitópia 2020</small>
@@ -325,7 +342,10 @@
         </div>
 
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script> -->
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/vue-i18n/dist/vue-i18n.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js" integrity="sha256-oE03O+I6Pzff4fiMqwEGHbdfcW7a3GRRxlL+U49L5sA=" crossorigin="anonymous"></script>
 
         <!-- Bootstrap core JavaScript -->
         <script src="vendor/jquery/jquery.min.js"></script>
