@@ -3,6 +3,7 @@
 
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+        debugger
         if (
             location.pathname.replace(/^\//, "") ==
                 this.pathname.replace(/^\//, "") &&
@@ -13,6 +14,7 @@
                 ? target
                 : $("[name=" + this.hash.slice(1) + "]");
             if (target.length) {
+                console.log('target.length', target.length)
                 $("html, body").animate(
                     {
                         scrollTop: target.offset().top - 71

@@ -63,3 +63,14 @@ i {
         }
     }
 }
+
+[v-cloak] {
+    display: none;
+}
+
+.lang {
+    font-size: 0.7rem !important;
+    &:hover {
+        cursor: pointer;
+    }
+}
