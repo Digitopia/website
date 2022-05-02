@@ -240,7 +240,7 @@ new Vue({
             "SpaceRecipes": {
                 name: "SPACE Recipes",
                 image: "img/software/spacerecipes.png",
-                url: "https://steameducation.eu/recipes/"
+                // url: "https://steameducation.eu/recipes/"
             },
             "Gamult": {
                 name: "Gamult",
