@@ -259,7 +259,7 @@ new Vue({
             },
             nuno: {
                 name: "Nuno Hespanhol",
-                image: "img/team/nuno.png"
+                image: "img/team/nuno.jpg"
             },
             filipe: {
                 name: "Filipe Fernandes",
