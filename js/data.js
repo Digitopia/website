@@ -9,14 +9,14 @@ var messages = {
         },
         mecenas: 'Patron',
         about: [
-            "Worten Digitópia is a digital music platform based at Casa da Música in Oporto, which encourages the act of listening, performance and musical creation.",
+            "Digitópia is a digital music platform based at Casa da Música in Oporto, which encourages the act of listening, performance and musical creation.",
             "Based on digital tools, although not exclusively, Digitopia emphasizes collaborative musical creation, software design, music education, social inclusion, aiming to emerge multicultural communities of performers, composers, curious and music lovers.",
         ],
         news: {
             "lancamento-do-blog-casa-da-musica": {
                 title: "Launch of Casa da Música Blog",
                 subtitle: "",
-                text: "Worten Digitópia participated in the creation and launch of Casa da Música Blog, available in <a href='https://blog.casadamusica.com' style='color: darkgrey' target='_blank'>blog.casadamusica.com</a>."
+                text: "Digitópia participated in the creation and launch of Casa da Música Blog, available in <a href='https://blog.casadamusica.com' style='color: darkgrey' target='_blank'>blog.casadamusica.com</a>."
             },
         },
         projects: {
@@ -97,14 +97,14 @@ var messages = {
         },
         mecenas: 'Mecenas',
         about: [
-            "A Worten Digitópia é uma plataforma de música digital sediada na Casa da Música, no Porto. Os seus objectivos são o de criar oportunidades que estimulem a criação, a performance, a educação, e a audição, sempre partindo do papel catalisador da tecnologia.",
+            "A Digitópia é uma plataforma de música digital sediada na Casa da Música, no Porto. Os seus objectivos são o de criar oportunidades que estimulem a criação, a performance, a educação, e a audição, sempre partindo do papel catalisador da tecnologia.",
             "Baseada em ferramentas digitais, embora não exclusivamente, as suas áreas de acção incluem a composição criativa, o desenvolvimento de software, a educação musical (através de formações e oficinas), e a inclusão social.",
         ],
         news: {
             "lancamento-do-blog-casa-da-musica": {
                 title: "Lançamento do Blog Casa da Música",
                 subtitle: "",
-                text: "A Worten Digitópia participou na criação e lançamento do blog Casa da Música, disponível em <a href='https://blog.casadamusica.com' style='color: darkgrey' target='_blank'>blog.casadamusica.com</a>."
+                text: "A Digitópia participou na criação e lançamento do blog Casa da Música, disponível em <a href='https://blog.casadamusica.com' style='color: darkgrey' target='_blank'>blog.casadamusica.com</a>."
             },
         },
         projects: {
