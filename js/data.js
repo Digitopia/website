@@ -64,10 +64,6 @@ var messages = {
                 position: "Curator, workshop leading, performance",
                 about: "Óscar Rodrigues is a composer and educator from Porto. A member of the team since 2010, he's the current curator.",
             },
-            augusto: {
-                position: "Sound art, performance",
-                about: "Pedro Augusto is an artist and musician working in the fields of electronic music, performance art and installation.",
-            },
             nuno: {
                 position: "Web development and programming",
                 about: "Nuno is in charge of most of the code on Digitópia's projects. He is also a musician (studied classical guitar).",
@@ -75,10 +71,6 @@ var messages = {
             filipe: {
                 position: "Workshop leading, interactivity, performance",
                 about: "Filipe is a composer specializing in electronics and community projects.",
-            },
-            brasio: {
-                position: "Video, performance",
-                about: "Manuel is a composer and also handles Digitópia's video projects.",
             },
             ricardo: {
                 position: "Sound design, interactivity, performance",
@@ -152,10 +144,6 @@ var messages = {
                 position: "Curadoria, workshop leading, performance",
                 about: "Óscar Rodrigues é um compositor e professor nascido no Porto e especializado em composição em tempo real, improvisação, e tecnologia musical.",
             },
-            augusto: {
-                position: "Sound art, performance",
-                about: "O Pedro Augusto é um artista e músico que trabalha nos campos da música electrónica, arte performativa, e instalações.",
-            },
             nuno: {
                 position: "Desenvolvimento web e programação",
                 about: "O Nuno é responsável pela maior parte do código dos projetos Digitópia. Também é músico (estudou guitarra clássica).",
@@ -163,10 +151,6 @@ var messages = {
             filipe: {
                 position: "Workshop leading, interatividade, performance",
                 about: "O Filipe é um compositor especialista em electrónica e projectos comunitários.",
-            },
-            brasio: {
-                position: "Video, performance",
-                about: "O Manuel é um compositor que também está encarregue dos projectos com vídeos.",
             },
             ricardo: {
                 position: "Desenho de som, interactividade, performance",
@@ -253,10 +237,6 @@ new Vue({
                 name: "Óscar Rodrigues",
                 image: "img/team/oscar.jpg"
             },
-            augusto: {
-                name: "Pedro Augusto",
-                image: "img/team/augusto.jpg"
-            },
             nuno: {
                 name: "Nuno Hespanhol",
                 image: "img/team/nuno.jpg"
@@ -264,10 +244,6 @@ new Vue({
             filipe: {
                 name: "Filipe Fernandes",
                 image: "img/team/filipe.jpg"
-            },
-            brasio: {
-                name: "Manuel Brásio",
-                image: "img/team/brasio.jpg"
             },
             ricardo: {
                 name: "Ricardo Vieira",
